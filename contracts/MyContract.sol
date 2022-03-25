@@ -15,7 +15,13 @@ contract MyContract{
     uint balance = 1000;
 
     // access modifier
-    //private
+    // private
     string _priname;
     uint _pribalance;
+
+    // constructor
+    constructor(string memory priname, uint pribalance){
+        _priname = priname;
+        _pribalance = pribalance;
+    }
 }
