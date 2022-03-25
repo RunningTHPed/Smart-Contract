@@ -21,6 +21,7 @@ contract MyContract{
 
     // constructor
     constructor(string memory priname, uint pribalance){
+        require(pribalance>0,"balance greater zero");
         _priname = priname;
         _pribalance = pribalance;
     }
