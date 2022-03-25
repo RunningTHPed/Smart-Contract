@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 contract MyContract{
     
-    //define variable
+    // define variable
 
     /*
     structure definition variable
@@ -13,4 +13,9 @@ contract MyContract{
     string name = "TestUser";
     int amount = 5000;
     uint balance = 1000;
+
+    // access modifier
+    //private
+    string _priname;
+    uint _pribalance;
 }
