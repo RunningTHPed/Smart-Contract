@@ -25,4 +25,12 @@ contract MyContract{
         _priname = priname;
         _pribalance = pribalance;
     }
+
+    function getBalance() public view returns(uint pribalance){
+        return _pribalance;
+    }
+
+    function deposite(uint amount) public{
+        _pribalance += amount;
+    }
 }
